@@ -1,0 +1,7 @@
+# GitHub Pages serves the portfolio at the repository root.
+exclude:
+  - ssg-exercise
+  - README.md
+  - links.txt
+  - node_modules
+  - dist

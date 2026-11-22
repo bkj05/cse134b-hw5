@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+.netlify/
+node_modules/
+_site/
+dist/

@@ -1,0 +1,36 @@
+---
+layout: layout.njk
+title: Home
+description: "Home - Benjamin Kettor Jr., UC San Diego computer science student building websites and data tools."
+bodyClass: home-page
+permalink: index.html
+---
+  <main id="main">
+    <h1>Benjamin Kettor Jr.</h1>
+    <p>Computer science student at UC San Diego, exploring websites and data tools that help people find information and make sense of it.</p>
+    <p>If you are planning a website or a practical tool, start with my <a href="{{ portfolio.url }}/projects.html">project examples</a>, then <a href="{{ portfolio.url }}/contact.html">tell me about your idea</a>.</p>
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured work</h2>
+      <article>
+        <h3>Esports Model Grader</h3>
+        <p>A project exploring how player statistics, recent form, and matchup context can be organized for review. Its data limitations matter as much as its interface.</p>
+        <p><a href="{{ portfolio.url }}/projects.html#esports">Read the project case study</a></p>
+      </article>
+    </section>
+    <section aria-labelledby="approach-heading">
+      <h2 id="approach-heading">My approach</h2>
+      <div>
+        <picture>
+          <source media="(min-width: 640px)" srcset="assets/project-process.svg" type="image/svg+xml">
+          <img src="assets/project-process.svg" alt="Understand the need, build the structure, and review the result." width="280" height="120">
+        </picture>
+        <p>I start with the intended user and a concrete task. Then I organize the content and build a small version that can be reviewed.</p>
+      </div>
+      <ben-note role="note"><p><strong>A useful first conversation starts with the problem.</strong> Tell me what your visitors need to accomplish, what content you already have, and what is currently difficult.</p></ben-note>
+    </section>
+    <section aria-labelledby="next-heading">
+      <h2 id="next-heading">Get to know me</h2>
+      <p>Learn about my <a href="about.html">background and project process</a>, or see how <a href="{{ portfolio.url }}/beyond-coding.html">music and community</a> influence the way I learn.</p>
+      <p>Have a minute between songs? <a href="{{ portfolio.url }}/beyond-coding.html#practice-break">Take a joke break</a> with two music puns and a live guest joke.</p>
+    </section>
+  </main>

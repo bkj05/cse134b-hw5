@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <title>{{ title }} | Benjamin Kettor Jr.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/theme.js" defer></script>
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <p><a href="index.html">Benjamin Kettor Jr.</a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html"{% if title == "Home" %} aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="about.html"{% if title == "About" %} aria-current="page"{% endif %}>About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" hidden>Switch to dark theme</button>
+  </header>
+{{ content | safe }}
+  {% include "footer.njk" %}
+</body>
+</html>
