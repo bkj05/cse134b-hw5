@@ -27,6 +27,22 @@ The component is in `assets/encore-jokes.js`; the surrounding portfolio sets
 its colors in `assets/styles.css`. With scripting off, one music pun, the
 portfolio content and the navigation are still available.
 
+### Try the failure and recovery
+
+1. Open **Between sets** and get a guest joke. Its text comes from the
+   response’s `joke` field (visible in the Network panel).
+2. With the page still open, select **Offline** in Chrome’s Network panel.
+   Ask for another guest joke. The previous one stays readable, an error
+   appears, and the button changes to **Retry guest joke**.
+3. Switch back to **No throttling** and activate **Retry guest joke** without
+   refreshing. A successful request replaces the joke and the error.
+
+The deployed page was checked with the keyboard in both themes and after
+reloading with each saved view. A local test simulated a disconnect and
+invalid responses, then retried against the actual API and compared the
+returned text to the displayed joke. Separate tests covered storage read
+and write failures and navigation with scripts disabled.
+
 ## Static site generator exercise
 
 Open [ssg-exercise/](ssg-exercise/) to build the **Home** (`index.html`) and
